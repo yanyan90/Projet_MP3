@@ -1,0 +1,300 @@
+body {
+    margin: 0px;
+}
+
+.acceuil {
+    background-color: black;
+    height: 940px;
+
+    background-repeat: no-repeat;
+}
+
+
+.acceuil h1 {
+    display: block;
+    margin-top: 0px;
+    text-align: center;
+    padding-top: 22%;
+    color: whitesmoke;
+    animation: 2s undefined-easeInOutElastic forwards;
+}
+
+@keyframes undefined-easeInOutElastic {
+    100% {
+        transform: translateY(0%);
+    }
+
+    92% {
+        transform: translateY(-0.08%);
+    }
+
+    90% {
+        transform: translateY(-0.1%);
+    }
+
+    82% {
+        transform: translateY(0.52%);
+    }
+
+    80% {
+        transform: translateY(0.39%);
+    }
+
+    72% {
+        transform: translateY(-2.35%);
+    }
+
+    70% {
+        transform: translateY(-2.39%);
+    }
+
+    62% {
+        transform: translateY(9.27%);
+    }
+
+    60% {
+        transform: translateY(11.75%);
+    }
+
+    40% {
+        transform: translateY(-111.75%);
+    }
+
+    38% {
+        transform: translateY(-109.27%);
+    }
+
+    30% {
+        transform: translateY(-97.61%);
+    }
+
+    28% {
+        transform: translateY(-97.65%);
+    }
+
+    20% {
+        transform: translateY(-100.39%);
+    }
+
+    18% {
+        transform: translateY(-100.52%);
+    }
+
+    8% {
+        transform: translateY(-99.97%);
+    }
+
+    4% {
+        transform: translateY(-99.9%);
+    }
+
+    0% {
+        transform: translateY(-100%);
+    }
+
+}
+
+
+.acceuil a {
+    text-decoration: none;
+}
+
+.chansons .chanson {
+    display: flex;
+    background-color: rgb(58, 58, 58);
+    color: rgb(245, 245, 245);
+    margin-top: 1px;
+    margin-bottom: 1px;
+    justify-content: space-between;
+}
+
+p.titre {
+    padding-left: 25px;
+}
+
+p.temps {
+    padding-right: 25px;
+}
+
+
+
+.player {
+    margin-top: 100px;
+
+    width: 40%;
+    height: 800px;
+
+}
+
+
+
+#music-player {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/colors-featured.jpg);
+    height: 945px;
+    background-position: center;
+    background-size: cover;
+}
+
+.player .header {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.323);
+    color: white;
+    padding-top: 75px;
+    padding-bottom: 10px;
+    border-radius: 25px 25px 0px 0px;
+}
+
+
+.player .header h1 {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-89px);
+}
+
+
+.player .header .recherche {
+    padding-right: 10px;
+}
+
+
+.player .header .recherche input {
+    position: absolute;
+    top: 60%;
+    left: 68%;
+    height: 27%;
+    border-radius: 5px;
+    background-color: rgba(255, 1, 217, 0.452);
+    width: 28%;
+    border-color: rgb(255, 0, 230);
+    border-radius: 20px;
+}
+
+
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.755);
+    opacity: 1;
+    /* Firefox */
+}
+
+.footer {
+    height: 150px;
+    background-color: rgba(0, 0, 0, 0.323);
+    position: relative;
+    border-radius: 0px 0px 25px 25px;
+}
+
+.footer input {
+    margin-top: 10px;
+}
+
+
+.footer .play-pause {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translateX(-37.5px);
+}
+
+.play-pause {
+    width: 75px;
+    height: 75px;
+    background-image: url(../images/pngwing.com.png);
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+.footer .volume {
+    position: absolute;
+    left: 65%;
+    top: 55%;
+}
+
+.footer .volume p {
+    position: absolute;
+    left: 25%;
+    bottom: 20%;
+    color: whitesmoke;
+}
+
+.footer img {
+    position: absolute;
+    left: 3%;
+    top: 20%;
+    border-radius: 10%;
+    border: 4px solid rgba(255, 0, 230, 0.859);
+}
+
+.footer p.pourcentage {
+    margin: 0px;
+}
+
+.timer {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin: 0px;
+}
+
+.timer .temps-fixe {
+
+    position: absolute;
+    right: 13%;
+    margin: 0px;
+    top: 2%;
+    color: whitesmoke;
+
+}
+
+.timer .barre-de-progression progress {
+    position: absolute;
+    left: 50%;
+    top: 2.3%;
+    transform: translateX(-50%);
+    width: 55%;
+}
+
+.footer .temps-minute {
+    position: absolute;
+    left: 13%;
+    margin: 0px;
+    top: 2%;
+    color: whitesmoke;
+}
+
+
+
+.retour button {
+    margin-left: 50%;
+    margin-top: 5%;
+    transform: translateX(-100px);
+    background-color: rgba(255, 0, 230, 0.608);
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: whitesmoke;
+    border-color: whitesmoke;
+}
+
+.retour button:hover {
+    background-color: whitesmoke;
+    color: rgb(255, 0, 230);
+    border-color: rgb(255, 0, 230);
+}
+
+.conteneur-chanson {
+    max-height: 400px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+div.chanson.actif {
+    background-color: rgba(255, 0, 230, 0.608);
+}
